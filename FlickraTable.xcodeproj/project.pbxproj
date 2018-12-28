@@ -20,7 +20,7 @@
 		3445390F21D53D4400959319 /* FlickraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3445390E21D53D4400959319 /* FlickraView.swift */; };
 		3445391121D53D6900959319 /* FlickraStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3445391021D53D6900959319 /* FlickraStoryboard.storyboard */; };
 		3445391321D5456800959319 /* FlickraViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3445391221D5456800959319 /* FlickraViewProtocol.swift */; };
-		3445391621D54D2900959319 /* WeatherResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3445391521D54D2900959319 /* WeatherResponse.swift */; };
+		3445391A21D60E2600959319 /* PhotosResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3445391921D60E2600959319 /* PhotosResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,7 +39,7 @@
 		3445390E21D53D4400959319 /* FlickraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickraView.swift; sourceTree = "<group>"; };
 		3445391021D53D6900959319 /* FlickraStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FlickraStoryboard.storyboard; sourceTree = "<group>"; };
 		3445391221D5456800959319 /* FlickraViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickraViewProtocol.swift; sourceTree = "<group>"; };
-		3445391521D54D2900959319 /* WeatherResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherResponse.swift; sourceTree = "<group>"; };
+		3445391921D60E2600959319 /* PhotosResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,7 +158,7 @@
 		3445391421D54D1B00959319 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				3445391521D54D2900959319 /* WeatherResponse.swift */,
+				3445391921D60E2600959319 /* PhotosResponse.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -237,7 +237,7 @@
 				344538FB21D53A9500959319 /* ModulesCoordinator.swift in Sources */,
 				3445390721D53C8500959319 /* FlickraInteractorProtocol.swift in Sources */,
 				3445390F21D53D4400959319 /* FlickraView.swift in Sources */,
-				3445391621D54D2900959319 /* WeatherResponse.swift in Sources */,
+				3445391A21D60E2600959319 /* PhotosResponse.swift in Sources */,
 				3445390921D53CA200959319 /* FlickraPresenter.swift in Sources */,
 				344538F821D53A4900959319 /* Application.swift in Sources */,
 				3445391321D5456800959319 /* FlickraViewProtocol.swift in Sources */,
