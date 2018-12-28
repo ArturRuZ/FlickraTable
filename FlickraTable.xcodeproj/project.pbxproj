@@ -21,9 +21,11 @@
 		3445391121D53D6900959319 /* FlickraStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3445391021D53D6900959319 /* FlickraStoryboard.storyboard */; };
 		3445391321D5456800959319 /* FlickraViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3445391221D5456800959319 /* FlickraViewProtocol.swift */; };
 		3445391A21D60E2600959319 /* PhotosResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3445391921D60E2600959319 /* PhotosResponse.swift */; };
+		659C11F18D8A37BC333C6030 /* Pods_FlickraTable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBBA956EB40621598DFBD4A3 /* Pods_FlickraTable.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FA3C0ABD4FC3DDF19584E89 /* Pods-FlickraTable.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickraTable.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlickraTable/Pods-FlickraTable.release.xcconfig"; sourceTree = "<group>"; };
 		344538E121D539C100959319 /* FlickraTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickraTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		344538E421D539C100959319 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		344538EB21D539C100959319 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -40,6 +42,8 @@
 		3445391021D53D6900959319 /* FlickraStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FlickraStoryboard.storyboard; sourceTree = "<group>"; };
 		3445391221D5456800959319 /* FlickraViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlickraViewProtocol.swift; sourceTree = "<group>"; };
 		3445391921D60E2600959319 /* PhotosResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosResponse.swift; sourceTree = "<group>"; };
+		D17E8404DD8416017549412D /* Pods-FlickraTable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickraTable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlickraTable/Pods-FlickraTable.debug.xcconfig"; sourceTree = "<group>"; };
+		FBBA956EB40621598DFBD4A3 /* Pods_FlickraTable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlickraTable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				659C11F18D8A37BC333C6030 /* Pods_FlickraTable.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,6 +63,8 @@
 			children = (
 				344538E321D539C100959319 /* FlickraTable */,
 				344538E221D539C100959319 /* Products */,
+				DB0966D0626C1F14DA1C3F1E /* Pods */,
+				3BC45C1F0151EEDAE798A0BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -163,6 +170,23 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
+		3BC45C1F0151EEDAE798A0BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBBA956EB40621598DFBD4A3 /* Pods_FlickraTable.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB0966D0626C1F14DA1C3F1E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D17E8404DD8416017549412D /* Pods-FlickraTable.debug.xcconfig */,
+				1FA3C0ABD4FC3DDF19584E89 /* Pods-FlickraTable.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -170,9 +194,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 344538F321D539C100959319 /* Build configuration list for PBXNativeTarget "FlickraTable" */;
 			buildPhases = (
+				56392B2CECC0380E1812A0B6 /* [CP] Check Pods Manifest.lock */,
 				344538DD21D539C000959319 /* Sources */,
 				344538DE21D539C000959319 /* Frameworks */,
 				344538DF21D539C000959319 /* Resources */,
+				ABA1F071FACF8898A7632C2A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -228,6 +254,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		56392B2CECC0380E1812A0B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FlickraTable-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABA1F071FACF8898A7632C2A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FlickraTable/Pods-FlickraTable-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlickraTable/Pods-FlickraTable-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		344538DD21D539C000959319 /* Sources */ = {
@@ -380,6 +453,7 @@
 		};
 		344538F421D539C100959319 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D17E8404DD8416017549412D /* Pods-FlickraTable.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -398,6 +472,7 @@
 		};
 		344538F521D539C100959319 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FA3C0ABD4FC3DDF19584E89 /* Pods-FlickraTable.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
