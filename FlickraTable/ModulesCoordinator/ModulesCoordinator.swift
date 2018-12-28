@@ -24,6 +24,7 @@ class ModulesCoordinator {
     }
 }
 
+
 extension ModulesCoordinator : FlickraPresenterOutput {
     
 }
