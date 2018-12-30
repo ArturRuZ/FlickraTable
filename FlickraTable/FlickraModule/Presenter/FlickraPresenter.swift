@@ -19,6 +19,7 @@ class FlickraPresenter {
 }
 
 extension FlickraPresenter : FlickraPresenterInput {
+  
     var output: FlickraPresenterOutput {
         get {
             return presenterOutputToCoordinator
@@ -35,6 +36,7 @@ extension FlickraPresenter : FlickraPresenterInput {
         set {
             view = newValue
         }
+        
     }
     
     var interactorInput: FlickraInteractorInput {
@@ -46,9 +48,14 @@ extension FlickraPresenter : FlickraPresenterInput {
         }
     }
     
-    
+    func getData() {
+        interactorInput.getData()
+    }
 }
 
 extension FlickraPresenter : FlickraInteractorOutput {
+    func presentData(storage : [PhotosModel]){
+        view.presentData(storage: storage)
+    }
     
 }

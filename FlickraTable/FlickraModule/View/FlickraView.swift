@@ -9,21 +9,69 @@
 import UIKit
 
 
+
 class FlickraViewController : UIViewController {
     
+    @IBOutlet weak var tableView: UITableView!
     private var presenter : FlickraPresenterInput!
+    private let kPhotoTableViewCellNib = UINib(nibName: "PhotoCellView", bundle: nil)
+    private let kPhotoTableViewCellReuseIdentifier = "kPhotoTableViewCellReuseIdentifier"
+    private var storage : [PhotosModel]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        demoNetworking()
-    }
-
+       presenter.getData()
+   }
     
 }
 
+extension FlickraViewController {
+    private func setUpUI() {
+       
+        tableView.register(kPhotoTableViewCellNib, forCellReuseIdentifier: kPhotoTableViewCellReuseIdentifier)
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 360
+        tableView.dataSource = self
+        tableView.delegate = self
+    }
+}
+
+extension FlickraViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return storage?.count ?? 0
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: kPhotoTableViewCellReuseIdentifier,
+                                                       for: indexPath) as? PhotoCellView else {
+                                                        return UITableViewCell()
+        }
+        //print(storage![indexPath.row]!)
+        //let viewModel = storage![indexPath.row] as! ViewCellModel
+       //print(viewModel)
+           // = storage![indexPath.row]
+        
+        cell.viewModel = storage?[indexPath.row]
+      
+        //cell.viewModel = photosResponse?.photos.photo[indexPath.row]
+        return cell
+    }
+}
+
+extension FlickraViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+       
+    }
+}
+
+
+
 
 extension FlickraViewController : FlickraViewtViewInput {
+   
+
+    
     var presenterInput: FlickraPresenterInput {
         get {
             return presenter
@@ -36,27 +84,10 @@ extension FlickraViewController : FlickraViewtViewInput {
     
 }
 
-
 extension FlickraViewController {
-    private func demoNetworking() {
-        let url = URL(string: "https://samples.openweathermap.org/data/2.5/weather?lat=35&lon=139&appid=b6907d289e10d714a6e88b30761fae22")!
-        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-            guard let data = data else { return }
-            DispatchQueue.main.async {
-                self.parse(data: data)
-            }
-        }
-        task.resume()
-    }
-    
-    private func parse(data: Data) {
-        print("длина байтов -= \(data.count)")
-        
-        do {
-            let weatherResponse = try JSONDecoder().decode(WeatherResponse.self, from: data)
-            print(weatherResponse)
-        } catch {
-            print("error = \(error.localizedDescription)")
-        }
+     func presentData(storage : [PhotosModel]) {
+        self.storage = storage
+        print(self.storage![3])
+        setUpUI()
     }
 } 
