@@ -11,9 +11,9 @@ import Foundation
 
 protocol FlickraViewtViewInput: class {
     var presenterInput: FlickraPresenterInput { get set }
+    func presentData(storage : [PhotosStruct])
 
 }
-
 
 protocol RoutingFlickraViewtView: class {
     func presentFlickraViewtViewIView()

@@ -21,7 +21,10 @@ struct Photo : Codable {
    var id : String
     var title : String
     var url_l : String
-    /*
+}
+
+
+/*
     var id: String
     var owner: String
     var secret : String
@@ -35,4 +38,4 @@ struct Photo : Codable {
     var height_l: String
     var width_l: String
  */
-}
+

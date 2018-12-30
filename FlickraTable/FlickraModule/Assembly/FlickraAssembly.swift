@@ -21,11 +21,18 @@ class FlickraAssembly {
         
         let presenter = FlickraPresenter()
         let interactor = FlickraInteractor()
+        let photoStorage = PhotosStorage()
         
         flickraVC.presenterInput = presenter
         presenter.interactorInput = interactor
         presenter.viewInput = flickraVC
         interactor.output = presenter
+        interactor.inputStorage = photoStorage
+        photoStorage.storageOutput = interactor
+        
+       
+        
+        
         
         return (controller: navigationVC, presenter: presenter)
     }
