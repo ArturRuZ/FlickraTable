@@ -15,7 +15,7 @@
         <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="kLh-yr-5Sb" customClass="PhotoCellView" customModule="FlickraTable" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="360"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kLh-yr-5Sb" id="7vd-ra-AkV">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kLh-yr-5Sb" id="7vd-ra-AkV">
                 <rect key="frame" x="0.0" y="0.0" width="320" height="359.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
@@ -23,14 +23,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="320" id="Yx9-GQ-VCe"/>
-                            <constraint firstAttribute="height" constant="320" id="dzy-2g-T8G"/>
+                            <constraint firstAttribute="height" constant="320" id="lWf-33-1A1"/>
                         </constraints>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UeW-5K-Nzr">
-                        <rect key="frame" x="0.0" y="319" width="320" height="40.5"/>
+                        <rect key="frame" x="0.0" y="320" width="320" height="30"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="pictureText" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGG-WH-SQJ">
-                                <rect key="frame" x="118" y="10" width="84" height="21"/>
+                                <rect key="frame" x="118" y="4.5" width="84" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -39,14 +39,17 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="vGG-WH-SQJ" firstAttribute="centerY" secondItem="UeW-5K-Nzr" secondAttribute="centerY" id="8h3-bE-bJG"/>
+                            <constraint firstItem="vGG-WH-SQJ" firstAttribute="centerY" secondItem="UeW-5K-Nzr" secondAttribute="centerY" id="AiQ-BE-Gsz"/>
                             <constraint firstItem="vGG-WH-SQJ" firstAttribute="centerX" secondItem="UeW-5K-Nzr" secondAttribute="centerX" id="FUs-hf-IJ8"/>
+                            <constraint firstItem="vGG-WH-SQJ" firstAttribute="centerX" secondItem="UeW-5K-Nzr" secondAttribute="centerX" id="U5f-ib-Kdh"/>
+                            <constraint firstAttribute="height" constant="30" id="ceb-aC-VpP"/>
                         </constraints>
                     </view>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="UeW-5K-Nzr" secondAttribute="trailing" id="4rA-sk-a4o"/>
                     <constraint firstItem="6we-sa-f1O" firstAttribute="top" secondItem="7vd-ra-AkV" secondAttribute="top" id="CqS-eI-CIt"/>
-                    <constraint firstItem="UeW-5K-Nzr" firstAttribute="top" secondItem="7vd-ra-AkV" secondAttribute="top" constant="319" id="FTj-5H-e36"/>
+                    <constraint firstItem="UeW-5K-Nzr" firstAttribute="top" secondItem="7vd-ra-AkV" secondAttribute="top" constant="320" id="FTj-5H-e36"/>
                     <constraint firstItem="UeW-5K-Nzr" firstAttribute="leading" secondItem="7vd-ra-AkV" secondAttribute="leading" id="Mvg-9W-aSA"/>
                     <constraint firstItem="6we-sa-f1O" firstAttribute="leading" secondItem="7vd-ra-AkV" secondAttribute="leading" id="QM0-D4-SyS"/>
                     <constraint firstAttribute="bottom" secondItem="UeW-5K-Nzr" secondAttribute="bottom" id="QPS-zI-iGk"/>
