@@ -18,5 +18,5 @@ protocol  FlickraInteractorInput: class {
 }
 
 protocol FlickraInteractorOutput: class {
-    func presentData(storage : [PhotosStruct])
+    func presentData(storage : [PhotosModel])
 }

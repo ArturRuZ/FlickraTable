@@ -15,5 +15,5 @@ protocol PhotosStorageInput {
 }
 
 protocol PhotosStorageOutput {
-    func presentData(storage : [PhotosStruct])
+    func presentData(storage : [PhotosModel])
 }

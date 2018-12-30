@@ -11,7 +11,7 @@ import Foundation
 
 protocol FlickraViewtViewInput: class {
     var presenterInput: FlickraPresenterInput { get set }
-    func presentData(storage : [PhotosStruct])
+    func presentData(storage : [PhotosModel])
 
 }
 

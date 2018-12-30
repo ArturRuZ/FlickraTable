@@ -37,7 +37,7 @@ extension FlickraInteractor : FlickraInteractorInput {
     }
 }
 extension FlickraInteractor : PhotosStorageOutput {
-    func presentData(storage: [PhotosStruct]) {
+    func presentData(storage: [PhotosModel]) {
         interactorOutput.presentData(storage: storage)
     }
 }

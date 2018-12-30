@@ -26,7 +26,7 @@
 		3457243221D78559004A806A /* PhotoCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3457243121D78559004A806A /* PhotoCellView.xib */; };
 		3457243421D792A1004A806A /* PhotosStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3457243321D792A1004A806A /* PhotosStorage.swift */; };
 		3457243621D7942B004A806A /* PhotosStorageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3457243521D7942B004A806A /* PhotosStorageProtocol.swift */; };
-		3457243921D8CB20004A806A /* PhotosStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3457243821D8CB20004A806A /* PhotosStruct.swift */; };
+		3457243921D8CB20004A806A /* PhotosModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3457243821D8CB20004A806A /* PhotosModel.swift */; };
 		659C11F18D8A37BC333C6030 /* Pods_FlickraTable.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBBA956EB40621598DFBD4A3 /* Pods_FlickraTable.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,7 +53,7 @@
 		3457243121D78559004A806A /* PhotoCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PhotoCellView.xib; sourceTree = "<group>"; };
 		3457243321D792A1004A806A /* PhotosStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosStorage.swift; sourceTree = "<group>"; };
 		3457243521D7942B004A806A /* PhotosStorageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosStorageProtocol.swift; sourceTree = "<group>"; };
-		3457243821D8CB20004A806A /* PhotosStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosStruct.swift; sourceTree = "<group>"; };
+		3457243821D8CB20004A806A /* PhotosModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosModel.swift; sourceTree = "<group>"; };
 		D17E8404DD8416017549412D /* Pods-FlickraTable.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlickraTable.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlickraTable/Pods-FlickraTable.debug.xcconfig"; sourceTree = "<group>"; };
 		FBBA956EB40621598DFBD4A3 /* Pods_FlickraTable.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlickraTable.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -180,7 +180,7 @@
 			children = (
 				3457243721D79442004A806A /* PhotosStorage */,
 				3445391921D60E2600959319 /* PhotosResponse.swift */,
-				3457243821D8CB20004A806A /* PhotosStruct.swift */,
+				3457243821D8CB20004A806A /* PhotosModel.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -357,7 +357,7 @@
 				344538E521D539C100959319 /* AppDelegate.swift in Sources */,
 				3457243621D7942B004A806A /* PhotosStorageProtocol.swift in Sources */,
 				3445390B21D53CB400959319 /* FlickraPresenterProtocol.swift in Sources */,
-				3457243921D8CB20004A806A /* PhotosStruct.swift in Sources */,
+				3457243921D8CB20004A806A /* PhotosModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

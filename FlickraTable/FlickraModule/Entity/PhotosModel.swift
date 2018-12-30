@@ -8,14 +8,14 @@
 
 import Foundation
 
-struct PhotosStruct {
+struct PhotosModel {
    
     let title : String
     let url : String
     let id : String
     
 }
-extension PhotosStruct : ViewCellModel {
+extension PhotosModel : ViewCellModel {
     var photoUrl: String {
         return url
     }

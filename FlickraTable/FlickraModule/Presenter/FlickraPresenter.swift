@@ -54,7 +54,7 @@ extension FlickraPresenter : FlickraPresenterInput {
 }
 
 extension FlickraPresenter : FlickraInteractorOutput {
-    func presentData(storage : [PhotosStruct]){
+    func presentData(storage : [PhotosModel]){
         view.presentData(storage: storage)
     }
     

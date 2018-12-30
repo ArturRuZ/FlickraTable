@@ -16,7 +16,7 @@ class FlickraViewController : UIViewController {
     private var presenter : FlickraPresenterInput!
     private let kPhotoTableViewCellNib = UINib(nibName: "PhotoCellView", bundle: nil)
     private let kPhotoTableViewCellReuseIdentifier = "kPhotoTableViewCellReuseIdentifier"
-    private var storage : [PhotosStruct]?
+    private var storage : [PhotosModel]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -85,7 +85,7 @@ extension FlickraViewController : FlickraViewtViewInput {
 }
 
 extension FlickraViewController {
-     func presentData(storage : [PhotosStruct]) {
+     func presentData(storage : [PhotosModel]) {
         self.storage = storage
         print(self.storage![3])
         setUpUI()
